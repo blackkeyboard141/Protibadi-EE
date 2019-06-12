@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rasik.protibadi_ee.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@drawable/main2"
+    >
+
+    <ImageView
+        android:background="@drawable/cropped"
+        android:id="@+id/img"
+        android:layout_weight="40"
+        android:layout_width="match_parent"
+        android:adjustViewBounds="true"
+
+        android:layout_height="0dp" />
+
+    <Button
+        android:id="@+id/btnDistress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:background="@drawable/buttonshape"
+        android:layout_margin="8dp"
+        android:text="Send Distress Messages"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:background="@drawable/buttonshape"
+        android:text="Add/remove number"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/btnExistingNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:background="@drawable/buttonshape"
+        android:text="See list of existing numbers"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/info"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+
+    <ListView
+        android:id="@+id/pairedlist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        />
+
+    <LinearLayout
+        android:id="@+id/inputpane"
+        android:layout_width="match_parent"
+
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+
+        <Button
+            android:id="@+id/ds"
+            android:background="#76448A"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disconnect"/>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
